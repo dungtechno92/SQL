@@ -2,3 +2,10 @@
 - Simple is good.
 - Avoid NULL if possible: The performance improvement from changing NULL columns to NOT NULL is usually
 small. If you are planing to index colums, avoid making them nullable.
+
+1. Whole Numbers:
+2. Real Numbers:
+3. String:
+    - VARCHAR: variable-length. MySQL preserves trailing spaces when you store and retrieve values. Must use extra bytes for store length.
+    - CHAR: fixed-length, MySQL removes any trailing spaces. Values are padded with spaces as needed for comparisons.
+    - TEXT:
