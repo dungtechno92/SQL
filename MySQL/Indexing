@@ -1,0 +1,23 @@
+1. Types of Indexes:
+  1.1. B-Tree indexes:
+    - Kinds of queries: 
+      + Match the full value.
+      + Match a leftmost prefix.
+      + Match a column prefix.
+      + Match a range of values.
+      + Match one part exactly and match a range on another part.
+      + Index-only queries.
+    - Limitations: 
+      + Not useful if the lookup does not start from the leftmost side of the indexed.
+      + Can’t skip columns in the index(when use index for multi columns).
+      + The storage engine can’t optimize accesses with any columns to the right of the
+      first range condition.
+   1.2. Hash indexes:
+    - Limitations:
+      + Can't use the values in the index to avoid reading the rows.
+      + Can't use hash indexes for sorting.
+      + Hash indexes don’t support partial key matching.
+      + Hash indexes support only equality comparisons.
+      + Some index maintenace operations can be slow if there are many hash collisions.
+    - Adaptive hash indexes( TODO).
+      
