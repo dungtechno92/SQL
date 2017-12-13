@@ -1,0 +1,7 @@
+1. MEMORY:
+  - Very fast. Useful for the temp data or session.
+  - This storage engine supported hash indexes.
+2. MyIsam engine:
+  - Supported full text indexs.
+  - Unsupported Transactions, row-level lock, hash indexs.
+3. InnoDB engine:
