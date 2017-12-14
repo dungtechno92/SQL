@@ -1,7 +1,13 @@
 1. MEMORY:
   - Very fast. Useful for the temp data or session.
   - This storage engine supported hash indexes.
+  - Reference : https://dev.mysql.com/doc/refman/5.7/en/memory-storage-engine.html.
 2. MyIsam engine:
   - Supported full text indexs.
-  - Unsupported Transactions, row-level lock, hash indexs.
+  - Unsupported transactions, row-level block, hash indexs.
+  - Reference: https://dev.mysql.com/doc/refman/5.7/en/myisam-storage-engine.html.
 3. InnoDB engine:
+  - Supported row-level block, transactions, full text indexs.
+  - Base on clustered index so querry by primary key so fast.
+  - Unsupported hash indexs.
+  - Reference: https://dev.mysql.com/doc/refman/5.7/en/innodb-introduction.html.
