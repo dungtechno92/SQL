@@ -8,6 +8,6 @@
   - Reference: https://dev.mysql.com/doc/refman/5.7/en/myisam-storage-engine.html.
 3. InnoDB engine:
   - Supported row-level block, transactions, full text indexs.
-  - Base on clustered index so querry by primary key so fast.
+  - Base on clustered index so querry by primary key so fast.(TODO)
   - Unsupported hash indexs.
   - Reference: https://dev.mysql.com/doc/refman/5.7/en/innodb-introduction.html.
