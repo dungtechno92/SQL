@@ -20,4 +20,5 @@
       + Hash indexes support only equality comparisons.
       + Some index maintenace operations can be slow if there are many hash collisions.
     - Adaptive hash indexes( TODO).
-      
+2. Benefits of indexes:
+
