@@ -18,3 +18,6 @@ small. If you are planing to index colums, avoid making them nullable.
 6. Bit-Packed Data Types:
 7. Choosing identifiers:
     - Integer is best choice.
+    - UUID:
+        + If you use auto increment, you must take langer memory for store ID.
+        + If you use auto increment, so easy to user find out the number of record in db and find out other records. That's not safe. 
