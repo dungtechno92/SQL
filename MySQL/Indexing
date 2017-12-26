@@ -21,4 +21,9 @@
       + Some index maintenace operations can be slow if there are many hash collisions.
     - Adaptive hash indexes( TODO).
 2. Benefits of indexes:
+  - Indexes reduce the amount of data the server has to examine.
+  - Indexes help the server avoid sorting and temporary tables.
+  - Indexes turn random I/O into sequential I/O.
+  * Note: At a high level, keep in mind that indexes are most effective when they help 
+  the storage engine find rows without adding more work than they avoid.
 
