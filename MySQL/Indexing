@@ -26,4 +26,7 @@
   - Indexes turn random I/O into sequential I/O.
   * Note: At a high level, keep in mind that indexes are most effective when they help 
   the storage engine find rows without adding more work than they avoid.
+3. Indexing Strategies for High Performance:
+  3.1. Isolating the Column:
+  3.2. Prefix Indexes and Index Selectivity:
 
