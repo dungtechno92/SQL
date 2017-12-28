@@ -29,4 +29,11 @@
 3. Indexing Strategies for High Performance:
   3.1. Isolating the Column:
   3.2. Prefix Indexes and Index Selectivity:
+  3.3. Multicolumns Indexes:
+        - When we use intersects indexes(usually for AND conditions). It usually means we need 
+        a single index with all relevant columns, not multiple indexes that have to conbined.
+        - When we use union indexes(usually for OR conditions), some time algorithm' buffering
+        , sorting and megering operation may uses a lot of CPU, memory. Consider about ignore index.
+        - Recall that the optimizer doesn’t account for this cost—it optimizes just the number
+        of random page reads.
 
