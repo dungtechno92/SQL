@@ -12,7 +12,7 @@
       + Can’t skip columns in the index(when use index for multi columns).
       + The storage engine can’t optimize accesses with any columns to the right of the
       first range condition.
-   1.2. Hash indexes:
+  1.2. Hash indexes:
     - Limitations:
       + Can't use the values in the index to avoid reading the rows.
       + Can't use hash indexes for sorting.
