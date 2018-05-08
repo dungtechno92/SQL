@@ -1,7 +1,6 @@
 ## Smaller is usually better.
 ## Simple is good.
-## Avoid NULL if possible: The performance improvement from changing NULL columns to NOT NULL is usually
-small. If you are planing to index colums, avoid making them nullable.
+## Avoid NULL if possible: The performance improvement from changing NULL columns to NOT NULL is usually small. If you are planing to index colums, avoid making them nullable.
 
 ## Whole Numbers:
 ## Real Numbers:
