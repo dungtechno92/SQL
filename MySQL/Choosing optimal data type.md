@@ -7,8 +7,7 @@
 ## String:
 #### VARCHAR: variable-length. MySQL preserves trailing spaces when you store and retrieve values. Must use extra bytes for store length.
 #### CHAR: fixed-length, MySQL removes any trailing spaces. Values are padded with spaces as needed for comparisons.
-#### TEXT: MySQL can’t index the full length of these data types and can’t use the indexes for
-    sorting. The best solution is to avoid using the BLOB and TEXT types unless you really need them.
+#### TEXT: MySQL can’t index the full length of these data types and can’t use the indexes for sorting. The best solution is to avoid using the BLOB and TEXT types unless you really need them.
 ## ENUM:
 #### The biggest downside of ENUM is that the list of strings is fixed, and adding or removing strings requires the use of ALTER TABLE.
 ## Date and Time:
