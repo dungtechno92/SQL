@@ -30,10 +30,24 @@
 ### Isolating the Column:
 ### Prefix Indexes and Index Selectivity:
 ### Multicolumns Indexes:
-        - When we use intersects indexes(usually for AND conditions). It usually means we need 
-        a single index with all relevant columns, not multiple indexes that have to conbined.
-        - When we use union indexes(usually for OR conditions), some time algorithm' buffering
-        , sorting and megering operation may uses a lot of CPU, memory. Consider about ignore index.
-        - Recall that the optimizer doesn’t account for this cost—it optimizes just the number
-        of random page reads.
+    - When we use intersects indexes(usually for AND conditions). It usually means we need 
+    a single index with all relevant columns, not multiple indexes that have to conbined.
+    - When we use union indexes(usually for OR conditions), some time algorithm' buffering
+    , sorting and megering operation may uses a lot of CPU, memory. Consider about ignore index.
+    - Recall that the optimizer doesn’t account for this cost—it optimizes just the number
+    of random page reads.
+### Clustered indexes:
+    - Clusterd index được lưu trữ như B-tree với node là index value, leaf lưu rows. Các rows được lưu trong bộ nhớ theo thứ tự của index.
+    - Anvantages:
+        + Các dữ liệu có liên quan được đặt gần nhau.
+        + Lấy dự liệu nhanh do index và data cùng lưu trên B-tree.
+        + Queries that use covering indexes can use the primary key values contained at the
+leaf node
+    - Disavantages:
+        + Nếu dữ liệu đã được lưu trong bộ nhớ theo thứ tự thì clustered index là không cần thiết.
+        + Thao tác thêm, sửa, xóa dữ liệu có thể dẫn đến việc phải thay đổi thứ tự của row trong bộ nhớ.
+        + Secondary index cần dùng 2 lần lockup index thay vì 1 lần.
+    - Comparison of InnoDB and MyISAM data layout:
+        + 
+        + 
 
