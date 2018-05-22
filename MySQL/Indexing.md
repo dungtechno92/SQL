@@ -41,8 +41,7 @@
     - Anvantages:
         + Các dữ liệu có liên quan được đặt gần nhau.
         + Lấy dự liệu nhanh do index và data cùng lưu trên B-tree.
-        + Queries that use covering indexes can use the primary key values contained at the
-leaf node
+        + Queries that use covering indexes can use the primary key values contained at the leaf node
     - Disavantages:
         + Nếu dữ liệu đã được lưu trong bộ nhớ theo thứ tự thì clustered index là không cần thiết.
         + Thao tác thêm, sửa, xóa dữ liệu có thể dẫn đến việc phải thay đổi thứ tự của row trong bộ nhớ.
