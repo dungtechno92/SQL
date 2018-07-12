@@ -49,4 +49,13 @@
     - Comparison of InnoDB and MyISAM data layout:
         + 
         + 
-
+### Covering Indexes:
+    - Là loại indexes mà bản thân indexes data đã cover tất cả các giá trị mà câu querry muốn trả về.
+    - Một số lợi ích khi chỉ đọc indexes thay vì việc đọc cả data:
+        + Indexes nhỏ hơn data rất nhiều nên việc đọc indexes sẽ tốn ít thời gian và cache indexes cũng sẽ tốn ít bộ nhớ hơn.
+        + Dùng cover index cho InnoDB đặc biệt có lợi vì nó tránh việc phải từ indexes look up đến primary key rồi lại phải look up đến         data.
+### Using Index Scans for Sorts:
+    - Best solution là dùng indexes để sort.
+    - Mysql có thể dùng indexes để order khi chúng ta sử dụng join.
+    - TODO sort algorithms: chapter 7
+    
