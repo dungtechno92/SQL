@@ -58,4 +58,14 @@
     - Best solution là dùng indexes để sort.
     - Mysql có thể dùng indexes để order khi chúng ta sử dụng join.
     - TODO sort algorithms: chapter 7
-    
+### Packed (Prefix-Compressed) Indexes:
+    - Just for MyISAM engine storage.
+### Redundant and Duplicate Indexes:
+    - Nên cân nhắc mỗi khi thay đổi indexes.
+    - Việc 1 bảng có thêm indexes sẽ làm cho việc insert, delete, update trở lên chậm hơn.
+    - Ví dụ 1: table có columns ID, A, B và câu querry WHERE A = 5 ORDER BY ID. Nếu dùng index (A) thì câu query sẽ dùng indexes để sort. Nếu dùng index (A, B) thì câu query sẽ dùng filsort.
+    - TODO: Percona Toolkit.
+### Unused Indexes:
+    - 
+### Indexes and Locking:
+    - 
