@@ -69,3 +69,5 @@
     - 
 ### Indexes and Locking:
     - 
+### An Indexing Case Study
+
