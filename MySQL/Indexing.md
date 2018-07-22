@@ -74,4 +74,5 @@
         + Nên add IN vào trong câu lên WHERE (Trang 190).
     - Avoiding Multiple Range Conditions:
         + 
-
+    - Optimizing Sorts:
+        +
