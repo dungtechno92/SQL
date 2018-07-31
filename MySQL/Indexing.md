@@ -69,7 +69,7 @@
     - 
 ### Indexes and Locking:
     - 
-### An Indexing Case Study
+## An Indexing Case Study
     - Supporting Many Kinds of Filtering:
         + Nên add IN vào trong câu lên WHERE (Trang 190).
     - Avoiding Multiple Range Conditions:
